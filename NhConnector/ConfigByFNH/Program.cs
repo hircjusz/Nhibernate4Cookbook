@@ -12,6 +12,8 @@ namespace ConfigByFNH
     {
         static void Main(string[] args)
         {
+            log4net.Config.XmlConfigurator.Configure();
+
             var config = MsSqlConfiguration
                 .MsSql2012
                 .ConnectionString(connstr => connstr.FromConnectionStringWithKey("db"))
