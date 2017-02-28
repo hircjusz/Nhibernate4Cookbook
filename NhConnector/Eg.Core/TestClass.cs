@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Eg.Core
 {
-    public class Class1
+    public class TestClass
     {
+        public virtual int Id { get; set; }
+        public virtual string Name { get; set; }
     }
 }
